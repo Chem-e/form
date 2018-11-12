@@ -75,6 +75,7 @@ input:focus {
     border: none;
     height: 35px;
     width: 100%;
+    margin-right: 5px;
 }
 
 .plus {
@@ -85,26 +86,113 @@ input:focus {
     border: 1px solid #d6d7d9;
     background-color: #ededf3;
     border-radius: 3px;
-    width: 100%;
+    width: 98%;
     height: 43px;
     padding-top: 1px;
     padding-left: 10px;
 }
 
+.wrap {
+    border-radius: 3px;
+    border: 1px solid #d6d7d9;
+    width: 100%;
+}
 
-/* .contacts {
-     width: 90%; 
-    margin: 20px;
-} */
+.items {
+    display: flex;
+    flex: 1;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding: 8px;
+    color: #b1b1b1;
+    margin: 0;
+    border-bottom: 1px solid #d6d7d9 !important;
+}
+
+.fa-sm {
+    margin-right: 14px;
+}
+
+.msg-input {
+    padding: 0;
+    margin: 0;
+    height: 120px;
+    width: 100%;
+    border: none;
+    background-color: #ededf3;
+}
 
 .headings {
-    /* padding-top: 20px; */
     margin-bottom: 15px;
+    color: #175692;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.discard,
+.message {
+    height: 40px;
+    margin-top: 18px;
+    margin-bottom: 18px;
+}
+
+.fa-times {
+    color: white;
+    padding: 10px 15px 42px 15px;
+    background: #b0c0cf;
+}
+
+.discard {
+    background: #d1dce8;
+    padding-bottom: 12px;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.discard-btn {
+    padding: 15px 15px 37px 15px;
+    background: #d1dce8;
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.fa-envelope {
+    color: white;
+    padding: 10px 15px 42px 15px;
+    background: #36a2e1;
+}
+
+.message {
+    background: #4db9ea;
+    padding-bottom: 12px;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.msg-btn {
+    padding: 14px 13px 38px 13px;
+    background: #4db9ea;
+    font-size: 22px;
+    margin-bottom: 5px;
 }
 
 @media screen and (max-width: 767px) {
     .main {
         width: 100%;
+    }
+    .discard,
+    .message {
+        width: 100%;
+        justify-content: flex-start;
+    }
+    .fa-times {
+        padding: 10px 20px 42px 20px;
     }
 }
 
@@ -112,4 +200,19 @@ input:focus {
     .main {
         width: 85%;
     }
+    .buttons {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .fa-sm {
+        margin-right: 21px;
+    }
+    .msg-input {
+        height: 160px;
+    }
+    .items {
+        padding: 12px;
+    }
 }
+
+;
