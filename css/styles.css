@@ -1,0 +1,33 @@
+.main {
+    height: 100%;
+    width: 35%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.container {
+    height: 500px;
+    width: 100%;
+    background: #2e5480;
+    margin: 20px auto;
+    border-top: 2px solid #2e5480;
+}
+
+.form {
+    height: 95%;
+    width: 95%;
+    background: white;
+    margin: 10px auto;
+}
+
+@media screen and (max-width: 767px) {
+    .main {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .main {
+        width: 85%;
+    }
+}
